@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<title>CLOCK</title>
+<style>
+body{
+
+height: 100vh;
+background: linear-gradient(45deg, #08001f, #30197d);
+color: #fff;
+position: relative;
+}
+h1{
+
+    margin-left: 400px;
+   margin-top: 30px;
+     font-family: "Helvetica", sans-serif;
+}
+.icon{
+
+    margin-left: 570px;
+    margin-top: -50px;
+    size: 30px;
+}
+.container{
+	width: 800px;
+	height: 180px;
+	position:absolute;
+    margin-top: -30px;
+	transform: translate(-50%,-50%);
+
+}
+.clock{
+      align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 300px;
+    margin-left: 550px;
+    background: rgba(232, 0, 255, 0.11);
+border-radius: 10px ;
+backdrop-filter: blur(40px);
+   }
+   
+.span1 {
+    margin-left: 200px; 
+    margin-top: 300px; 
+}
+
+.box{
+margin-left: 500px;
+margin-top: -250px;
+	width: 180px;
+	height: 180px;
+	border-radius: 5px;
+	 background-color: #f41b75;
+
+}
+.box2{
+	margin-left: 1200px;
+margin-top: -30px;
+	width: 180px;
+	height: 180px;
+	border-radius: 5px;
+	 background-color: #419aff;
+	 border-radius: 50%;
+	 position: absolute;
+	 z-index: -1;
+
+}
+.time{
+     font-weight: bold;
+    margin-left: 200px;
+  align-items: center;
+    justify-content: center;
+font-size: 100px;
+transform: translateX(-5%);
+   transform: translateY(15%);
+ margin-space
+
+}
+
+#hour{
+margin-top: 300px;
+font-size: 100px;
+}
+
+.txt1{
+font-size: 25px;
+margin-top: 5px;
+margin-left: 10px;
+}
+.txt2{
+font-size: 25px;
+margin-left: 180px;
+margin-top: -50px;
+}
+.txt3{
+font-size: 25px;
+margin-left: 350px;
+margin-top: -50px;
+}
+</style>
+</head>
+<body>
+    <h1>DIGITAL     CL <i class="fa-solid fa-clock"></i> CK</h1>
+    
+<div class="hero">
+<div class="container">
+	<div class="clock">
+        <div class="time">
+		<span id="hour">00:</span>:
+		<span id="minute">00:</span>:
+		<span id="second">00</span>
+<p class="txt1">Hours</p>
+<p class="txt2">Mins</p>
+<p class="txt3">Sec</p>
+		</div>
+    </div>
+
+
+		<div class="box">
+			
+		</div>
+		<div class="box2">
+			
+		</div>
+	</div>
+	</div>
+</div>
+</body>
+<script type="text/javascript">
+ 
+     let hourElement = document.getElementById("hour");
+        let minuteElement = document.getElementById("minute");
+        let secondElement = document.getElementById("second");
+        let currentTime = new Date();
+    hour.innerHTML=currentTime.getHours();
+minute.innerHTML=currentTime.getMinutes();
+second.innerHTML=currentTime.getSeconds();
+</script>
+</html>
+
+
